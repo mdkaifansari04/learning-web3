@@ -1,0 +1,19 @@
+{
+  "name": "solana-rpc-server-airdrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -b && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.2",
+    "i": "^0.3.7",
+    "npm": "^11.4.2",
+    "typescript": "^5.8.3"
+  }
+}
