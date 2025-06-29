@@ -2,6 +2,9 @@ fn main() {
     let ans = is_even(12);
     fiboo(5);
     print_series(10);
+    let name = String::from("Kaif"); 
+    let count = get_string_length(&name);
+    println!("The length of string is :{} ",count )
 }
 
 // conditionals
@@ -33,4 +36,9 @@ fn print_series(num: u32) -> (){
     for i in 1..=num  {
         print!("{} ", i);
     }
+}
+
+//string methods 
+fn get_string_length(s : &str)->usize{
+    s.chars().count()
 }
