@@ -1,10 +1,9 @@
-
-
 // conditionals
 fn is_even(num: i32) ->bool{
     return num % 2 == 0;
 }
 
+// while and conditionals
 fn fiboo(n: i32) -> (){
     if n>1 {
         let mut first=0;
@@ -37,12 +36,8 @@ fn get_string_length(s : &str)->usize{
 }
 
 
-
-
 // structs in rust
 // structs are basically the objects in JS
-
-
 struct User {
     active : bool,
     email : String,
