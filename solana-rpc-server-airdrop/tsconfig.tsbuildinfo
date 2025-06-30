@@ -1,1 +1,1 @@
-{"root":["./src/index.ts"],"version":"5.8.3"}
+{"root":["./src/airdrop/index.ts","./src/show-balance/index.ts"],"version":"5.8.3"}
