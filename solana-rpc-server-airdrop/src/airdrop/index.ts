@@ -8,4 +8,4 @@ export const airDropSolana = async (address: string, amount: number) => {
   console.log("res", res);
 };
 
-airDropSolana("FfL4LhBP65krJHD4gtPYFsEgpbC2udWqJ3QL8p6JAV3U", 1);
+// airDropSolana("FfL4LhBP65krJHD4gtPYFsEgpbC2udWqJ3QL8p6JAV3U", 1);

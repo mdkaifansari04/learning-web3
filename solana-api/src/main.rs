@@ -10,7 +10,8 @@ async fn main() {
         .route("/airdrop", post(airdrop))
         .route("/balance/:address", get(get_balance));
 
-    let addr = SocketAddr::from(([0, 0, 0, 0], 3000));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 3001));
     println!("Server running on :  http://{}", addr);
-    axum::Server::bind(&addr).serve(app.into_make_service()).await.unwrap();
+    let listener = tokio::net::TcpListener::bind(addr).await.unwrap();
+    axum::serve(listener, app.into_make_service()).await.unwrap();
 }
